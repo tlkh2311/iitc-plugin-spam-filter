@@ -1,18 +1,18 @@
-﻿// ==UserScript==
-// @id             iitc-plugin-spam-filter@3ch01c
+// ==UserScript==
+// @id             iitc-plugin-spam-filter
 // @name           IITC plugin: spam-filter
 // @category       Misc
-// @version        0.0.2
+// @version        0.0.3
 // @namespace      https://github.com/3ch01c/ingress-intel-total-conversion
-// @description    This is a spam filter plugin which filters out SPAM from Comm messages.
-// @include        https://www.ingress.com/intel*
-// @include        http://www.ingress.com/intel*
-// @match          https://www.ingress.com/intel*
-// @match          http://www.ingress.com/intel*
-// @include        https://www.ingress.com/mission/*
-// @include        http://www.ingress.com/mission/*
-// @match          https://www.ingress.com/mission/*
-// @match          http://www.ingress.com/mission/*
+// @description    This is a spam filter plugin which filters out SPAM from Comm messages. (modded with new stores)
+// @include        https://*.ingress.com/intel*
+// @include        http://*.ingress.com/intel*
+// @match          https://*.ingress.com/intel*
+// @match          http://*.ingress.com/intel*
+// @include        https://*.ingress.com/mission/*
+// @include        http://*.ingress.com/mission/*
+// @match          https://*.ingress.com/mission/*
+// @match          http://*.ingress.com/mission/*
 // @grant          none
 // @updateURL      https://github.com/klept0/iitc-plugin-spam-filter/raw/master/spamfilter.meta.js
 // @downloadURL    https://github.com/klept0/iitc-plugin-spam-filter/raw/master/spamfilter.user.js
@@ -65,4 +65,3 @@ var info = {};
 if (typeof GM_info !== 'undefined' && GM_info && GM_info.script) info.script = { version: GM_info.script.version, name: GM_info.script.name, description: GM_info.script.description };
 script.appendChild(document.createTextNode('('+ wrapper +')('+JSON.stringify(info)+');'));
 (document.body || document.head || document.documentElement).appendChild(script);
-
