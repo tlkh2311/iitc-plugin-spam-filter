@@ -36,7 +36,7 @@ var setup = function() {
 				continue;
 			}
 			var text = data[key][2];
-			if (text.search(xmps\.biz|(ecwid|ingressfarm|shop-ingress|ingacc)\.com)>=0) {
+			if (text.search(/xmps\.biz|(ecwid|ingressfarm|shop-ingress|ingacc)\.com|ingintems\.net/i)>=0) {
 				continue;
 			}
 			filteredData[key] = data[key];
