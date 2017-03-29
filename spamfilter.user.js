@@ -37,7 +37,7 @@ var setup = function() {
 				continue;
 			}
 			var text = data[key][2];
-			if (text.search(/xmps\.biz|ingress-shop|shop-ingress|ingressfarm\.com/i)>=0) {
+			if (text.search(/xmps\.biz|ingress-shop|allforingress|shop-ingress|ingressfarm\.com/i)>=0) {
 				continue;
 			}
 			filteredData[key] = data[key];
